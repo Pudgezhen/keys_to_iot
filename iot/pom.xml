@@ -9,9 +9,9 @@
 
     <packaging>pom</packaging>
     <modules>
+        <module>system</module>
+        <module>core</module>
         <module>api</module>
-        <module>user</module>
-        <module>device</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -21,7 +21,7 @@
     </parent>
     <groupId>com.keys</groupId>
     <artifactId>iot</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>iot</name>
     <description>Demo project for Spring Boot</description>
 
