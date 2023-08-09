@@ -7,7 +7,6 @@
         <dubbo.version>3.1.11</dubbo.version>
     </properties>
 
-
     <packaging>pom</packaging>
     <modules>
         <module>api</module>
@@ -47,12 +46,14 @@
                 <version>${dubbo.version}</version>
             </dependency>
 
+            <!-- dubbo-starter 版本控制-->
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
                 <version>${dubbo.version}</version>
             </dependency>
 
+            <!--dubbo-nacos 注册中心-->
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-registry-nacos</artifactId>

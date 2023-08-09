@@ -10,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2023/8/8 16:37
  */
 @SpringBootApplication
-@EnableDubbo
 public class DeviceApplication {
     public static void main(String[] args) {
         SpringApplication.run(DeviceApplication.class,args);

@@ -3,13 +3,13 @@ server:
 
 dubbo:
   application:
-    name: user
+    name: user   #注册中心name
   protocol:
-    name: dubbo
-    port: -1
+    name: dubbo  #协议
+    port: -1    #系统自动选择的端口
 
-  registry:
-    address: nacos://127.0.0.1:8848
+  registry:      # 注册中心
+    address: nacos://127.0.0.1:8848    # 注册中心地址
     username: nacos
     password: nacos
 
