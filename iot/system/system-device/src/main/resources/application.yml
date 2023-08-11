@@ -7,7 +7,21 @@ dubbo:
     name: dubbo  #协议
     port: -1    #系统自动选择的端口
 
-  registry:      # 注册中心
-    address: nacos://127.0.0.1:8848    # 注册中心地址
+  consumer:
+    check: false
+  registry:
+    address: nacos://127.0.0.1:8848
     username: nacos
     password: nacos
+    parameters.namespace: cd796cba-302e-4a14-99af-1b28adeb9a89
+    group: iot
+    parameters.register-consumer-url: true
+
+  config-center:   # 读不到配置文件  TODO 待解决
+    address: nacos://127.0.0.1:8848
+    username: nacos
+    password: nacos
+    namespace: keys
+    group: iot
+    app-config-file: device-dubbo.yml
+
